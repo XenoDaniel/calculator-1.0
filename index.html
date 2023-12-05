@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="calculator dark-theme">
+    <div class="screen" id="output">0</div>
+    <div class="buttons">
+      <button onclick="clearScreen()">C</button>
+      <button onclick="toggleSign()">+/-</button>
+      <button onclick="appendCharacter('%')">%</button>
+      <button onclick="setOperation('/')">/</button>
+      <button onclick="appendCharacter('7')">7</button>
+      <button onclick="appendCharacter('8')">8</button>
+      <button onclick="appendCharacter('9')">9</button>
+      <button onclick="setOperation('*')">*</button>
+      <button onclick="appendCharacter('4')">4</button>
+      <button onclick="appendCharacter('5')">5</button>
+      <button onclick="appendCharacter('6')">6</button>
+      <button onclick="setOperation('-')">-</button>
+      <button onclick="appendCharacter('1')">1</button>
+      <button onclick="appendCharacter('2')">2</button>
+      <button onclick="appendCharacter('3')">3</button>
+      <button onclick="setOperation('+')">+</button>
+      <button onclick="appendCharacter('0')">0</button>
+      <button onclick="appendDecimal()">.</button>
+      <button onclick="calculateResult()">=</button>
+      <button onclick="appendFunction('sqrt')">√</button>
+      <button onclick="appendFunction('square')">x²</button>
+      <button onclick="appendFunction('sin')">sin</button>
+      <button onclick="appendFunction('cos')">cos</button>
+      <button onclick="appendFunction('tan')">tan</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
